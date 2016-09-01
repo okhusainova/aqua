@@ -6,8 +6,8 @@ var browserSync = require('browser-sync').create();
      server: "./"
  });
  browserSync.stream();
- gulp.watch("aqua/less/*.less", ['less']);
- gulp.watch("aqua/*.html").on('change', browserSync.reload);
+ gulp.watch("less/*.less", ['styles']);
+ gulp.watch("*.html").on('change', browserSync.reload);
 
 gulp.task('default', function() {
   // place code for your default task here

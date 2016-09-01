@@ -31,11 +31,15 @@
   transform: rotate(-90deg);
 }
 /* Mixins */
+@font-face {
+  font-family: Intro;
+  src: url(../fonts/subset-Intro.woff);
+}
 body {
   height: 100%;
-  margin: 0 0;
+  margin: 0 auto;
   padding: 0 0;
-  width: 100%;
+  max-width: 1400px;
   font-size: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -49,6 +53,7 @@ body {
 }
 .main-picture {
   width: 100%;
+  margin-bottom: 5%;
 }
 .menu {
   position: absolute;
@@ -156,15 +161,6 @@ body {
   font-family: PT Sans;
   color: #ffffff;
 }
-/*.main-info {
-	position: relative;
-	color: @color-blue-text;
-	font-size: 33.6px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-family: @main-font;
-	font-weight: bold;
-}*/
 .row:after {
   content: "";
   display: table;
@@ -173,7 +169,7 @@ body {
 .container .cols {
   float: left;
   margin-right: 2%;
-  margin-top: 2%;
+  margin-top: 0%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -193,11 +189,10 @@ body {
 }
 .container .cols.col-4 {
   width: 32%;
+  position: relative;
 }
 .container .cols.col-6 {
-  height: 552px;
   width: 49%;
-  background-image: url("/ph4.png");
 }
 .head {
   color: #1ab8e3;
@@ -220,7 +215,7 @@ body {
 .numb {
   font-size: 9.000em;
   color: #f1f1f1;
-  font-family: BRITANNIC BOLD;
+  font-family: Intro;
 }
 .touch-menu {
   display: none;
@@ -231,6 +226,7 @@ body {
 .touch-mail {
   display: none;
 }
+/* Media queries */
 @media only screen and (max-width: 767px) {
   .container .cols.col-4,
   .container .cols.col-6 {
@@ -249,9 +245,6 @@ body {
 @media only screen and (max-width: 800px) {
   body {
     font-size: 100%;
-  }
-  .logo__title {
-    color: red;
   }
 }
 @media only screen and (max-width: 1418px) {
@@ -280,15 +273,15 @@ body {
   }
   .head {
     position: absolute;
-    top: 721px;
-    left: 79px;
+    top: 182px;
+    left: 114px;
     z-index: 1;
     font-size: 1.6em;
   }
   .numb {
     position: absolute;
-    top: 755px;
-    left: 141px;
+    top: 282px;
+    left: 111px;
     z-index: 0;
   }
   .menu {
@@ -318,4 +311,36 @@ body {
     top: 80px;
     right: 251px;
   }
+  .menu__item {
+    float: none;
+  }
+  .menu__link {
+    border-top: 1px solid #eee;
+  }
+  .menu__link:first-child {
+    border-top: none;
+  }
+  .description {
+    display: none;
+  }
+  .title {
+    left: 157px;
+    top: 2201px;
+  }
+  .logo {
+    font-size: 87%;
+  }
+  .logo__picture {
+    width: 85%;
+  }
+  .title1 {
+    display: none;
+  }
 }
+@media only screen and (max-width: 600px) {
+  .logo {
+    top: 257px;
+    left: 118px;
+  }
+}
+/* Media queries */

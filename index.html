@@ -3,41 +3,48 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<title>Document</title>
+		<title>Акватория</title>
 		<link rel="stylesheet" href="css/style.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+  		<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
 	</head>	
 	<body>
 		<div class="wrapper">
-		<!-- HEADER -->
-		<!-- <div class="main" style="background-image: url(../images/aqua-header.png); width: 100%; height: 700px"> -->
-			
-
-		<!-- </div> -->
-			<img src="images/aqua-header.png" alt="" class="main-picture">
-			<a href="#" ><img src="images/menu.png" class="touch-menu" alt="menu"></a>
+			<!-- HEADER -->
+			<div class="main">
+				<div class="slider">
+					<div class="slider__picture" style="background: url(../images/aqua-header1.png);  width: 100%; height: 700px; background-position: center center;"></div>
+					<div class="slider__picture" style="background: url(../images/aqua-header2.png);  width: 100%; height: 700px; background-position: center center;"></div>
+					<div class="slider__picture" style="background: url(../images/aqua-header3.png);  width: 100%; height: 700px; background-position: center center;"></div>
+					<div class="slider__picture" style="background: url(../images/aqua-header4.png);  width: 100%; height: 700px; background-position: center center;"></div>
+					<div class="slider__picture" style="background: url(../images/aqua-header5.png);  width: 100%; height: 700px; background-position: center center;"></div>
+					<div class="slider__picture" style="background: url(../images/aqua-header6.png);  width: 100%; height: 700px; background-position: center center;"></div>
+				</div>
 				<nav class="menu">
 					<ul class="menu__list">
-							<li class="menu__item"><a class="menu__link" href="#">Коттеджи</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Клуб</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Фестиваль</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Аква на карте</a></li>
-						</ul>	
+						<li class="menu__item"><a class="menu__link" href="#">Коттеджи</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Клуб</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Фестиваль</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Аква на карте</a></li>
+					</ul>
 				</nav>
-			<a href="#" ><img src="images/contact.png" class="touch-call" alt="call"></a>
-			<div class="contact"><a href="#" class="contact__item">+7 (962) 000-13-32</a></div>
-			<img src="images/connect.png" class="touch-mail" alt="call"></a>
-			<div class="connect"><a href="#" class="connect__item">Написать нам</a></div>
-			<div class="logo">
-				<img src="images/logo/acva6.png" alt="" class="logo__picture">
-				<div class="logo__title">Спортивный клуб</div>
-				<div class="logo__name"> &laquo;Акватория&raquo;</div>
+				<a href="#" ><img src="images/menu.png" class="touch-menu" alt="menu"></a>
+				<a href="#" ><img src="images/contact.png" class="touch-call" alt="call"></a>
+				<div class="contact"><a href="#" class="contact__item">+7 (962) 000-13-32</a></div>
+				<img src="images/connect.png" class="touch-mail" alt="call">
+				<div class="connect"><a href="#" class="connect__item">Написать нам</a></div>
+				<div class="logo">
+					<img src="images/logo/acva6.png" alt="" class="logo__picture">
+					<div class="logo__title">Спортивный клуб</div>
+					<div class="logo__name"> &laquo;Акватория&raquo;</div>
+				</div>
+				<div class="title">Отель и коттеджный поселок<br> на базе клуба любителей водных<br> видов спорта</div>
 			</div>
-			<div class="title slabtexed">Отель и коттеджный поселок<br> на базе клуба любителей водных<br> видов спорта</div>
-		<!-- /HEADER -->
-		<!-- MAIN CONTENT -->
+			<!-- /HEADER -->
+			<!-- MAIN CONTENT -->
 			<div class="container">
 				<div class="row">
-					<div class="cols col-4"><img src="images/ph1.png" class="main-picture" alt=""><span class="head">Виндсерфинг</span><span class="numb">01</span></div>
+					<div class="cols col-4 blur"><img src="images/ph1.png" class="main-picture" alt=""><span class="head">Виндсерфинг</span><span class="numb">01</span></div>
 					<div class="cols col-4"><img src="images/ph2.png" class="main-picture" alt=""><span class="head">Jet Ski</span><span class="numb">02</span></div>
 					<div class="cols col-4"><img src="images/ph3.png" class="main-picture" alt=""><span class="head">Кайтсерфинг</span><span class="numb">03</span></div>
 				</div>
@@ -47,14 +54,28 @@
 					<div class="cols col-4"><img src="images/ph3.png" class="main-picture" alt=""><span class="head">Кайтсерфинг</span><span class="numb">06</span></div>
 				</div>
 				<div class="row">
-					<div class="cols col-6"><img src="images/ph5.png" class="main-picture" alt=""><div class="title1">Отель и коттеджи</div> 
+					<div class="cols col-6"><img src="images/ph5.png" class="main-picture" alt=""><div class="title1">Отель и коттеджи</div>
 					<p class="description">На берегу Красного озера на базе клуба построен отель и коттеджный поселок с интересной и уникальной спортивно- развлекательной инфраструктурой. Специально для увлекающихся людей мы оставили несколько мест. Предлагаем вам возможность приобрести участок под строительство собственного коттеджа на территории базы.</p>
 					</div>
 					<div class="cols col-6"><img src="images/ph4.png" class="main-picture" alt=""></div>
 				</div>
 			</div>
-		<!-- MAIN CONTENT -->	
 		</div>
-		
+		<!-- MAIN CONTENT -->
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick/slick.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.slider').slick({autoplay: true, arrows: 'false', dots: true});
+		});
+	</script>
+
 	</body>
 </html>
+
+
+
+
