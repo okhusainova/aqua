@@ -5,7 +5,7 @@
 @tablet1270: ~"only screen and (max-width: 1270px)";
 @mobile600: ~"only screen and (max-width: 600px)";
 @tablet1418: ~"only screen and (max-width: 1418px)";
-@main-font: PT Sans;
+@main-font: 'PT Sans';
 @color-blue-text: #1ab8e3;
 @color-blue-box: #20bbe5;
 @color-grey: #f1f1f1;
@@ -35,6 +35,21 @@
 	font-family: @main-font;
 	color: @color-white;
 }
+.typography-5 {
+	font-family: @main-font;
+	font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+}
+.typography-6 {
+		color: #20aee2;
+	    font-family: @main-font;
+	    top: 141px;
+	    font-size: 5em;
+	    left: 103px;
+	    text-transform: uppercase;
+}
+
 .rotate_div_90 {
 	-moz-transform: rotate(-90deg); /* Для Firefox */
     -ms-transform: rotate(-90deg); /* Для IE */
@@ -251,7 +266,34 @@ body {
 		display: none;
 }
 
+.location {
+	margin: 2%;
 
+	&__item-1 {
+		font-family: PT Sans, sans-serif;
+		text-align:center;
+	}
+	&__item-2 {
+		.typography-5;
+	}
+}
+
+.club {
+	margin-top: 5%;
+	
+	&__title {
+		font-family: PT Sans, sans-serif;
+		text-align:center;
+	}
+}
+.map {
+	position: relative;
+
+	&__item {
+		position: absolute;
+	    .typography-6;
+    }
+}
 /* Media queries */
 @media @mobile {
 	.container .cols.col-4 ,
