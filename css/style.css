@@ -194,6 +194,10 @@ body {
 .container .cols.col-6 {
   width: 49%;
 }
+.main-picture-slider {
+  height: 520px;
+  width: 660px;
+}
 .head {
   color: #1ab8e3;
   font-size: 2.100em;
