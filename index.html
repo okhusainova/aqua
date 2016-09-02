@@ -58,11 +58,11 @@
 					<div class="cols col-6"><img src="images/ph5.png" class="main-picture" alt=""><div class="title1">Отель и коттеджи</div>
 					<p class="description">На берегу Красного озера на базе клуба построен отель и коттеджный поселок с интересной и уникальной спортивно- развлекательной инфраструктурой. Специально для увлекающихся людей мы оставили несколько мест. Предлагаем вам возможность приобрести участок под строительство собственного коттеджа на территории базы.</p>
 					</div>
-				<div class="info-slider">
-					<div class="cols col-6"><img src="images/info-block/1.jpg" class="main-picture-slider" alt=""></div>
-					<div class="cols col-6"><img src="images/info-block/2.jpg" class="main-picture-slider" alt=""></div>
-					<div class="cols col-6"><img src="images/info-block/3.jpg" class="main-picture-slider" alt=""></div>
-				</div>
+					<div class="info-slider">
+						<div class="cols col-6"><img src="images/info-block/1.jpg" class="main-picture-slider" alt=""></div>
+						<div class="cols col-6"><img src="images/info-block/2.jpg" class="main-picture-slider" alt=""></div>
+						<div class="cols col-6"><img src="images/info-block/3.jpg" class="main-picture-slider" alt=""></div>
+					</div>
 				</div>
 			</div>
 
@@ -75,6 +75,17 @@
 			</div>
 			<div class="club">
 				<h1 class="club__title">Клуб Акватории</h1>
+				<div class="club__slider-1">
+					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/1.jpg" alt="">Сергей Седаков</div>
+					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/2.jpg" alt="">Сергей Друппов</div>
+					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/3.jpg" alt="">Михаил Седаков</div>
+					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/4.jpg" alt="">Наталья Друппова</div>
+					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/5.jpg" alt="">Кристина Риччи</div>
+					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/6.jpg" alt="">Константин Петров</div>
+					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/7.jpg" alt="">Михаил Иванов</div>
+					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/8.jpg" alt="">Игорь Тарасов</div>
+				</div>
+				<button class="club__join">Вступить в клуб</button>
 			</div>
 		</div>
 		<!-- MAIN CONTENT -->
@@ -87,6 +98,8 @@
 		$(document).ready(function(){
 		  $('.head-slider').slick({autoplay: true, arrows: 'false', dots: true});
 		  $('.info-slider').slick({autoplay: true, arrows: 'false', dots: true});
+		  $('.club__slider-1').slick({"slidesToShow": 4, arrows: 'true', dots: true, centerMode: true});
+		  
 		});
 	</script>
 
