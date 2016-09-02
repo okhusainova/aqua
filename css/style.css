@@ -134,7 +134,7 @@ body {
   font-family: PT Sans;
   color: #ffffff;
 }
-.contact__item {
+.phone__item {
   position: absolute;
   top: 74px;
   right: 139px;
@@ -146,7 +146,7 @@ body {
   font-family: PT Sans;
   color: #ffffff;
 }
-.connect__item {
+.mail__item {
   position: absolute;
   top: 277px;
   right: 71px;
@@ -248,7 +248,7 @@ body {
   }
 }
 @media only screen and (max-width: 1418px) {
-  .contact {
+  .phone {
     display: none;
   }
   .touch-call {
@@ -266,7 +266,7 @@ body {
     font-size: 1.5em;
     top: 206px;
   }
-  .connect__item {
+  .mail__item {
     top: 230px;
     right: 61px;
     font-size: 0.7em;
@@ -287,10 +287,10 @@ body {
   .menu {
     display: none;
   }
-  .contact {
+  .phone {
     display: none;
   }
-  .connect {
+  .mail {
     display: none;
   }
   .touch-menu {
