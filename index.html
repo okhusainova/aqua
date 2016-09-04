@@ -8,6 +8,10 @@
 		<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
   		<link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
   		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  		 <style type="text/css">
+	      html, body { height: 100%; margin: 0; padding: 0; }
+	      #map { height: 100%; }
+	    </style>
 	</head>	
 	<body>
 		<div class="wrapper">
@@ -29,8 +33,8 @@
 						<li class="menu__item"><a class="menu__link" href="#">Аква на карте</a></li>
 					</ul>
 				</nav>
-				<a href="#" ><img src="images/ico_menu.png" class="touch-menu" alt="menu"></a>
-				<a href="#" ><img src="images/ico_phone.png" class="touch-call" alt="call"></a>
+				<a href="#"><img src="images/ico_menu.png" class="touch-menu" alt="menu"></a>
+				<a href="#"><img src="images/ico_phone.png" class="touch-call" alt="call"></a>
 				<div class="phone"><a href="#" class="phone__item">+7 (962) 000-13-32</a></div>
 				<img src="images/ico_mail.png" class="touch-mail" alt="call">
 				<div class="mail"><a href="#" class="mail__item">Написать нам</a></div>
@@ -39,7 +43,13 @@
 					<div class="logo__title">Спортивный клуб</div>
 					<div class="logo__name"> &laquo;Акватория&raquo;</div>
 				</div>
-				<div class="title">Отель и коттеджный поселок<br> на базе клуба любителей водных<br> видов спорта</div>
+				<div class="title-1">Отель и коттеджный поселок<br> на базе клуба любителей водных<br> видов спорта <img src="images/line.png" class="title-1__line"></div>
+				<div class="title-2">Фестиваль водных<br> видов спорта</div>
+					<div class="title-2__numb">25</div>
+					<div class="title-2__month">августа</div>
+					<a href="#"><img src="images/ico_twitter.png" class="touch-twitter" alt="twitter"></a>
+					<a href="#"><img src="images/ico_vk.png"      class="touch-vk" alt="vk"></a>
+					<a href="#"><img src="images/ico_fb.png"      class="touch-fb" alt="fb"></a>
 			</div>
 			<!-- /HEADER -->
 			<!-- MAIN CONTENT -->
@@ -54,41 +64,99 @@
 					<div class="cols col-4"><img src="images/action/2.jpg" class="main-picture" alt=""><span class="head">Jet Ski</span><span class="numb">05</span></div>
 					<div class="cols col-4"><img src="images/action/3.jpg" class="main-picture" alt=""><span class="head">Кайтсерфинг</span><span class="numb">06</span></div>
 				</div>
-				<div class="row">
-					<div class="cols col-6"><img src="images/ph5.png" class="main-picture" alt=""><div class="title1">Отель и коттеджи</div>
-					<p class="description">На берегу Красного озера на базе клуба построен отель и коттеджный поселок с интересной и уникальной спортивно- развлекательной инфраструктурой. Специально для увлекающихся людей мы оставили несколько мест. Предлагаем вам возможность приобрести участок под строительство собственного коттеджа на территории базы.</p>
+				<div class="flex-container">
+				<!-- <div class="row"> -->
+					<div class="club-description flex-item" style="background-color: blue; height: 520px; width:700px;">dfgfdgfg
+						<!-- <div class="title1">Отель и коттеджи</div>
+						<p class="description">На берегу Красного озера на базе клуба построен отель и коттеджный поселок с интересной и уникальной спортивно- развлекательной инфраструктурой. Специально для увлекающихся людей мы оставили несколько мест. Предлагаем вам возможность приобрести участок под строительство собственного коттеджа на территории базы.</p> -->
 					</div>
-					<div class="info-slider">
-						<div class="cols col-6"><img src="images/info-block/1.jpg" class="main-picture-slider" alt=""></div>
-						<div class="cols col-6"><img src="images/info-block/2.jpg" class="main-picture-slider" alt=""></div>
-						<div class="cols col-6"><img src="images/info-block/3.jpg" class="main-picture-slider" alt=""></div>
+					<div class="info-slider flex-item" style="background-color: red; height: 100px; width:700px;">
+						<div class=""><img src="images/info-block/1.jpg" class="main-picture-slider" alt=""></div>
+						<div class=""><img src="images/info-block/2.jpg" class="main-picture-slider" alt=""></div>
+						<div class=""><img src="images/info-block/3.jpg" class="main-picture-slider" alt=""></div>
 					</div>
+				<!-- </div> -->
 				</div>
-			</div>
+				<div class="location"><h1 class="location__item-1">В 20 км от Невинномысска расположено озеро Красное,</h1>
+					<p class="location__item-2">прекрасное место для катания на вейке и винд-серфинге. В 2010 г., при поддержке<br> минэкономразвития Ставропольского края в этом месте был проведен <strong style="color: #20bbe5;">первый открытый<br>чемпионат Ставрополья</strong> по водным видам спорта.</p>
+				</div>
+				<div class="map">
+					<h1 class="map__item">Как нас<br> найти</h1>
+					<div id="map" style="height: 600px;width: 1400px;"></div>
+    <script type="text/javascript">
 
-			<div class="location"><h1 class="location__item-1">В 20 км от Невинномысска расположено озеро Красное,</h1>
-				<p class="location__item-2">прекрасное место для катания на вейке и винд-серфинге. В 2010 г., при поддержке<br> минэкономразвития Ставропольского края в этом месте был проведен <strong style="color: #20bbe5;">первый открытый<br>чемпионат Ставрополья</strong> по водным видам спорта.</p>
-			</div>
-			<div class="map">
-				<h1 class="map__item">Как нас<br> найти</h1>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11006.691282909254!2d41.95728703165824!3d44.63842684489403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f83f176f3f4553%3A0xbb4316c14333edc9!2z0J3QtdCy0LjQvdC90L7QvNGL0YHRgdC6LCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5!5e0!3m2!1sru!2sru!4v1472847585869" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
-			</div>
-			<div class="club">
-				<h1 class="club__title">Клуб Акватории</h1>
-				<div class="club__slider-1">
-					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/1.jpg" alt="">Сергей Седаков</div>
-					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/2.jpg" alt="">Сергей Друппов</div>
-					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/3.jpg" alt="">Михаил Седаков</div>
-					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/4.jpg" alt="">Наталья Друппова</div>
-					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/5.jpg" alt="">Кристина Риччи</div>
-					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/6.jpg" alt="">Константин Петров</div>
-					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/7.jpg" alt="">Михаил Иванов</div>
-					<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/8.jpg" alt="">Игорь Тарасов</div>
+			
+function initMap() {
+        var myLatLng = {lat: -25.363, lng: 131.044};
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          scrollwheel: false,
+          zoom: 4
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Hello World!'
+        });
+      }
+			
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaPuZAsPnnBiAvgJbjsITz7-GrUEdQe24&callback=initMap">
+    </script>
 				</div>
-				<button class="club__join">Вступить в клуб</button>
+				<div class="club">
+					<h1 class="club__title">Клуб Акватории</h1>
+					<div class="club__slider-1">
+						<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/1.jpg" alt="">Сергей Седаков</div>
+						<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/2.jpg" alt="">Сергей Друппов</div>
+						<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/3.jpg" alt="">Михаил Седаков</div>
+						<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/4.jpg" alt="">Наталья Друппова</div>
+						<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/5.jpg" alt="">Кристина Риччи</div>
+						<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/6.jpg" alt="">Константин Петров</div>
+						<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/7.jpg" alt="">Михаил Иванов</div>
+						<div class="club__slider-1__item"><img class="club__slider-1__item_round" src="images/slider-club/8.jpg" alt="">Игорь Тарасов</div>
+					</div>
+					<div class="club__slider-1-prev"><button class="prev"><img src="images/ico_menu.png" class="touch-menu" alt="menu"></button></div>
+					<div class="club__join"><button class="club__join__button">Вступить в клуб</button></div>
+				</div>
 			</div>
+	
+			<!-- MAIN CONTENT -->
+
+		  	<!-- FOOTER -->
+			<div class="footer">
+				<div class="footer-info">
+					<div class="footer-info__title">
+						Наши партнеры<br> и друзья
+					</div>
+					<div class="footer-info__link">
+						<a href="" class="footer-info__link__item">Коттеджи</a>
+						<a href="" class="footer-info__link__item">Клуб</a>
+						<a href="" class="footer-info__link__item">Фестиваль</a>
+						<a href="" class="footer-info__link__item">Аква на карте</a>
+						<a href="" class="footer-info__link__item">+7 (962) 000-13-32</a>
+						<a href="" class="footer-info__link__item">Написать нам</a>
+						<a href="#" class="footer-info__social__item"><img src="images/ico_twitter-footer.png"  alt="twitter"></a>
+						<a href="#" class="footer-info__social__item"><img src="images/ico_vk-footer.png"       alt="vk"></a>
+						<a href="#" class="footer-info__social__item"><img src="images/ico_fb-footer.png"  alt="fb"></a>
+						<a href="" class="footer-info__link__author">Дизайн и разработка - <strong>Оджетто</strong></a>
+					</div>
+					<div class="partners-slider">
+						<div class="partners-slider__item"><img src="images/partners/1.jpg"></div>
+						<div class="partners-slider__item"><img src="images/partners/2.jpg"></div>
+						<div class="partners-slider__item"><img src="images/partners/3.jpg"></div>
+						<div class="partners-slider__item"><img src="images/partners/4.jpg"></div>
+						<div class="partners-slider__item"><img src="images/partners/5.jpg"></div>
+					</div>
+				</div>
+			</div>	
+			<!-- FOOTER -->
 		</div>
-		<!-- MAIN CONTENT -->
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -98,14 +166,11 @@
 		$(document).ready(function(){
 		  $('.head-slider').slick({autoplay: true, arrows: 'false', dots: true});
 		  $('.info-slider').slick({autoplay: true, arrows: 'false', dots: true});
-		  $('.club__slider-1').slick({"slidesToShow": 4, arrows: 'true', dots: true, centerMode: true});
-		  
+		  $('.club__slider-1').slick({"slidesToShow": 4, arrows: true, dots: true, centerMode: true, centerPadding: '1px',
+			prevArrow: $('.prev')});
+		  $('.partners-slider').slick({autoplay: false, arrows: 'false', dots: true});
 		});
 	</script>
 
 	</body>
 </html>
-
-
-
-

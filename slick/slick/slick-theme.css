@@ -133,6 +133,9 @@
     text-align: center;
 }
 
+
+
+
 .info-slider .slick-dots li button:before
 {
     font-family: 'slick';
@@ -151,11 +154,13 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.slick-dots .club__slider-1 {
+    display: none;
+}
 .slick-dots
 {
     position: absolute;
-    top: 628px;
+    top: 594px;
     right: 477px;
     display: block;
     width: 100%;
@@ -164,6 +169,7 @@
     list-style: none;
     text-align: center;
 }
+
 .slick-dots li
 {
     position: relative;
@@ -208,7 +214,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 11px;
     line-height: 20px;
     position: absolute;
     top: 0;
