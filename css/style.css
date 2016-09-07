@@ -471,9 +471,12 @@ body {
   position: absolute;
 }
 .partners-slider {
-  width: 300px;
+  width: 700px;
   top: 85px;
   right: 93px;
+}
+.partners-slider__item {
+  margin-right: 83px;
 }
 .prev {
   position: absolute;
@@ -581,7 +584,7 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .flex-container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -624,6 +627,7 @@ body {
     left: 120px;
     font-size: 7em;
     z-index: 0;
+    color: #c3c0c0;
   }
   .menu {
     display: none;
@@ -758,7 +762,7 @@ body {
     font-size: 0.9em;
   }
   .partners-slider {
-    display: none;
+    width: 400px;
   }
   .twitter {
     left: 120px;

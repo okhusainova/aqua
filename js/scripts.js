@@ -33,16 +33,4 @@ $(document).ready(function() {
             menu.removeAttr('style');
         }
     });
-
-    // $('#touch-menu').on('click', function(e) {
-    //     e.preventDefault();
-    //     if (menu.is(':hidden')) {
-    //         menu.show();
-    //         alert('show');
-    //         return;
-    //     }
-    //     alert('hide');
-    //     menu.hide();
-    // })
-
 });
