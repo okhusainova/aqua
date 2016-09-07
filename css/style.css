@@ -361,15 +361,20 @@ body {
 .flex-container {
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .flex-container__left,
 .flex-container__right {
   height: 520px;
-  width: 650px;
+  width: 45%;
   -ms-flex-positive: 0;
       flex-grow: 0;
   -ms-flex-negative: 0;
@@ -416,6 +421,7 @@ body {
 }
 .footer {
   background-color: #f5f5f5;
+  position: relative;
 }
 .footer-info {
   margin-top: 5%;
@@ -425,6 +431,7 @@ body {
   height: 280px;
 }
 .footer-info__title {
+  width: 309px;
   padding-left: 124px;
   padding-top: 76px;
   font-size: 32px;
@@ -460,11 +467,52 @@ body {
   margin-right: 10%;
   float: right;
 }
-.partners-slider {
+.slick-slider.partners-slider {
   position: absolute;
-  top: -217px;
-  left: 923px;
+}
+.partners-slider {
   width: 300px;
+  top: 85px;
+  right: 93px;
+}
+.prev {
+  position: absolute;
+  top: 164px;
+  width: 50px;
+  height: 65px;
+  background: url(../images/navigation/1.png);
+  border: transparent;
+  vertical-align: middle;
+}
+.next {
+  position: absolute;
+  top: 164px;
+  right: 5px;
+  width: 50px;
+  height: 65px;
+  background: url(../images/navigation/2.png);
+  border: transparent;
+  vertical-align: middle;
+}
+.prevs {
+  top: 86px;
+  left: 413px;
+  position: absolute;
+  width: 50px;
+  height: 65px;
+  background: url(../images/navigation/1.png);
+  border: transparent;
+  vertical-align: middle;
+}
+.nexts {
+  top: 86px;
+  right: 61px;
+  width: 50px;
+  position: absolute;
+  height: 65px;
+  background: url(../images/navigation/2.png);
+  border: transparent;
+  vertical-align: middle;
 }
 /* Media queries */
 @media (max-width: 418px) {
@@ -472,13 +520,20 @@ body {
     top: 33px;
     font-size: 4em;
   }
-}
-@media (max-width: 690px) {
-  .numb .numb {
-    font-size: 9.000em;
+  .flex-container__left__description {
+    font-size: 0.9em;
   }
-  .numb .head {
-    font-size: 2.100em;
+  .partners-slider {
+    display: none;
+  }
+  .twitter {
+    left: 120px;
+  }
+  .vk {
+    left: 194px;
+  }
+  .fb {
+    left: 264px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -556,6 +611,15 @@ body {
     font-size: 1.8em;
   }
 }
+@media (max-width: 1200px) {
+  .flex-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .flex-container__left {
+    margin-right: 0;
+  }
+}
 @media only screen and (max-width: 1270px) {
   body {
     font-size: 103%;
@@ -573,19 +637,35 @@ body {
   .head {
     position: absolute;
     top: 150px;
-    left: 68px;
+    left: 86px;
     z-index: 1;
-    font-size: 1.6em;
+    font-size: 2em;
+  }
+  .head1 {
+    position: absolute;
+    top: 150px;
+    left: 133px;
+    z-index: 1;
+    font-size: 2em;
   }
   .numb {
     position: absolute;
-    top: 188px;
-    left: 11px;
-    font-size: 4em;
+    top: 234px;
+    left: 120px;
+    font-size: 7em;
     z-index: 0;
   }
   .menu {
     display: none;
+    height: 100vh;
+    transform: translateZ(0);
+    top: 24px;
+    right: 24px;
+    width: 100%;
+    position: fixed;
+    background: #000000;
+    max-width: 351px;
+    z-index: 3;
   }
   .phone {
     display: none;
@@ -625,6 +705,68 @@ body {
   }
   .flex-container__left {
     margin-bottom: 3%;
+  }
+  .flex-container__left,
+  .flex-container__right {
+    width: 606px;
+  }
+}
+@media (max-width: 936px) {
+  .head {
+    position: absolute;
+    top: 150px;
+    left: 17px;
+    z-index: 1;
+    font-size: 2em;
+  }
+  .head1 {
+    left: 68px;
+  }
+  .numb {
+    left: 68px;
+  }
+  .footer-info .twitter {
+    position: absolute;
+    top: 220px;
+    left: 220px;
+  }
+  .footer-info .fb {
+    position: absolute;
+    top: 220px;
+    left: 420px;
+  }
+  .footer-info__social__item {
+    position: absolute;
+    top: 220px;
+    left: 320px;
+  }
+  .footer-info__link__item {
+    display: none;
+  }
+  .footer-info__link__author {
+    display: none;
+  }
+  .footer-info__title {
+    display: none;
+  }
+  .prevs {
+    left: 13px;
+  }
+  .nexts {
+    right: 27px;
+  }
+}
+@media (max-width: 690px) {
+  .numb {
+    font-size: 9.000em;
+    left: 107px;
+  }
+  .head {
+    font-size: 2.100em;
+    left: 65px;
+  }
+  .head1 {
+    left: 136px;
   }
 }
 @media only screen and (max-width: 1418px) {
