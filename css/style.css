@@ -515,27 +515,6 @@ body {
   vertical-align: middle;
 }
 /* Media queries */
-@media (max-width: 418px) {
-  .map__item {
-    top: 33px;
-    font-size: 4em;
-  }
-  .flex-container__left__description {
-    font-size: 0.9em;
-  }
-  .partners-slider {
-    display: none;
-  }
-  .twitter {
-    left: 120px;
-  }
-  .vk {
-    left: 194px;
-  }
-  .fb {
-    left: 264px;
-  }
-}
 @media only screen and (max-width: 700px) {
   .title-1 {
     display: none;
@@ -602,15 +581,6 @@ body {
     width: 100%;
   }
 }
-@media only screen and (max-width: 800px) {
-  body {
-    font-size: 100%;
-  }
-  .title-1 {
-    line-height: 43px;
-    font-size: 1.8em;
-  }
-}
 @media (max-width: 1200px) {
   .flex-container {
     -ms-flex-pack: distribute;
@@ -659,13 +629,20 @@ body {
     display: none;
     height: 100vh;
     transform: translateZ(0);
-    top: 24px;
-    right: 24px;
+    top: 25px;
+    left: 70%;
     width: 100%;
     position: fixed;
     background: #000000;
-    max-width: 351px;
+    max-width: 36%;
     z-index: 3;
+  }
+  .menu__list {
+    padding-top: 189px;
+    padding-left: 118px;
+  }
+  .menu__link {
+    padding-bottom: 12%;
   }
   .phone {
     display: none;
@@ -678,6 +655,8 @@ body {
     position: absolute;
     top: 80px;
     right: 97px;
+    background-repeat: repeat-x;
+    z-index: 5;
   }
   .touch-call {
     display: block;
@@ -709,6 +688,20 @@ body {
   .flex-container__left,
   .flex-container__right {
     width: 606px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 100%;
+  }
+  .title-1 {
+    line-height: 43px;
+    font-size: 1.8em;
+  }
+  .menu {
+    top: 15px;
+    left: 55%;
+    max-width: 43%;
   }
 }
 @media (max-width: 936px) {
@@ -756,6 +749,27 @@ body {
     right: 27px;
   }
 }
+@media (max-width: 418px) {
+  .map__item {
+    top: 33px;
+    font-size: 4em;
+  }
+  .flex-container__left__description {
+    font-size: 0.9em;
+  }
+  .partners-slider {
+    display: none;
+  }
+  .twitter {
+    left: 120px;
+  }
+  .vk {
+    left: 194px;
+  }
+  .fb {
+    left: 264px;
+  }
+}
 @media (max-width: 690px) {
   .numb {
     font-size: 9.000em;
@@ -767,6 +781,11 @@ body {
   }
   .head1 {
     left: 136px;
+  }
+  .menu {
+    left: 21%;
+    max-width: 77%;
+    top: 9px;
   }
 }
 @media only screen and (max-width: 1418px) {
