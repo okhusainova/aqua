@@ -7,19 +7,62 @@ $(document).ready(function() {
         centerMode: true,
         centerPadding: '1px',
         prevArrow: $('.prev'),
-        nextArrow: $('.next')
+        nextArrow: $('.next'),
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
     });
     $('.partners-slider').slick({
         "slidesToShow": 4,
         autoplay: false,
         arrows: true,
         prevArrow: $('.prevs'),
-        nextArrow: $('.nexts')
+        nextArrow: $('.nexts'),
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
 
 
-    var touch = $('#touch-menu');
+    var touch = $('#touchMenu');
     var menu = $('.menu');
 
     $(touch).on('click', function(e) {
