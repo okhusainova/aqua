@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('.head-slider').slick({ autoplay: true, arrows: 'false', dots: true });
     $('.info-slider').slick({ autoplay: true, arrows: 'false', dots: true });
-    $('.club__slider').slick({
+    $('.club-slider').slick({
         "slidesToShow": 4,
         arrows: true,
         centerMode: true,

@@ -2,6 +2,10 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
+var svgstore = require('gulp-svgstore');
+var inject = require('gulp-inject');
+var svgmin = require('gulp-svgmin');
+var path = require('path');
 browserSync.init({
     server: "./"
 });
@@ -31,4 +35,37 @@ gulp.task('jquery', function() {
         }))
         .pipe(gulp.dest('./public/vendor/'));
     // creates ./public/vendor/jquery.custom.js 
+});
+
+gulp.task('svgstore', function() {
+    return gulp
+        .src('images/src/*.svg')
+        .pipe(svgmin(function(file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('images/dest'));
+});
+
+gulp.task('svgstore', function () {
+    var svgs = gulp
+        .src('images/src/*.svg')
+        .pipe(svgstore({ inlineSvg: true }));
+
+    function fileContents (filePath, file) {
+        return file.contents.toString();
+    }
+
+    return gulp
+        .src('images/src/inline-svg.html')
+        .pipe(inject(svgs, { transform: fileContents }))
+        .pipe(gulp.dest('images/dest'));
 });
