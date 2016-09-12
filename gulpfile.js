@@ -40,32 +40,7 @@ gulp.task('jquery', function() {
 gulp.task('svgstore', function() {
     return gulp
         .src('images/src/*.svg')
-        .pipe(svgmin(function(file) {
-            var prefix = path.basename(file.relative, path.extname(file.relative));
-            return {
-                plugins: [{
-                    cleanupIDs: {
-                        prefix: prefix + '-',
-                        minify: true
-                    }
-                }]
-            }
-        }))
-        .pipe(svgstore())
-        .pipe(gulp.dest('images/dest'));
-});
-
-gulp.task('svgstore', function () {
-    var svgs = gulp
-        .src('images/src/*.svg')
-        .pipe(svgstore({ inlineSvg: true }));
-
-    function fileContents (filePath, file) {
-        return file.contents.toString();
-    }
-
-    return gulp
-        .src('images/src/inline-svg.html')
-        .pipe(inject(svgs, { transform: fileContents }))
+        .pipe(svgmin())
+        .pipe(svgstore({ fileName: 'icons.svg', prefix: 'ico-' }))
         .pipe(gulp.dest('images/dest'));
 });

@@ -16,7 +16,7 @@
     <div class="wrapper">
         <!-- HEADER -->
         <div class="main">
-            <div class="head-slider">
+            <div class="head-slider js-head-slider">
                 <div class="head-slider__picture" style="background-image: url(images/slider-header/1.jpg);"></div>
                 <div class="head-slider__picture" style="background-image: url(images/slider-header/2.jpg);"></div>
                 <div class="head-slider__picture" style="background-image: url(images/slider-header/3.jpg);"></div>
@@ -24,27 +24,44 @@
                 <div class="head-slider__picture" style="background-image: url(images/slider-header/5.jpg);"></div>
                 <div class="head-slider__picture" style="background-image: url(images/slider-header/6.jpg);"></div>
             </div>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#">Коттеджи</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Клуб</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Фестиваль</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Аква на карте</a></li>
-                </ul>
+            <div class="sidebar">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="#">Коттеджи</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Клуб</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Фестиваль</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Аква на карте</a></li>
+                    </ul>
+            </div>
             </nav>
-            <a href="#" id="touchMenu"><img src="images/ico_menu.png" class="touch-menu" alt="menu"></a>
-            <a href="#"><img src="images/ico_phone.png" class="touch-call" alt="call"></a>
-            <div class="phone"><a href="#" class="phone__item">+7 (962) 000-13-32</a></div>
-            <img src="images/ico_mail.png" class="touch-mail" alt="call">
-            <div class="mail"><a href="#" class="mail__item">Написать нам</a></div>
+            <a href="#" id="mobileMenuIcon">
+                <svg class="touch-menu">
+                    <use xlink:href="images/dest/src.svg#ico_menu">
+                </svg>
+            </a>
+            <a href="tel:+79620001332">
+                <svg class="touch-call">
+                    <use xlink:href="images/dest/src.svg#ico_phone">
+                </svg>
+            </a>
+            <div class="phone">
+                <a href="tel:+79620001332" class="phone__item">+7 (962) 000-13-32</a>
+            </div>
+            <svg class="touch-mail">
+                <use xlink:href="images/dest/src.svg#ico_mail">
+            </svg>
+            <!-- <img src="images/ico_mail.png" class="touch-mail" alt="call"> -->
+            <div class="mail">
+                <a href="#" class="mail__item">Написать нам</a>
+            </div>
             <div class="logo">
                 <img src="images/logo/logo.png" alt="" class="logo__picture">
                 <div class="logo__title">Спортивный клуб</div>
                 <div class="logo__name"> &laquo;Акватория&raquo;</div>
             </div>
-            <div class="title-1">Отель и коттеджный поселок
+            <div class="main-title">Отель и коттеджный поселок
                 <br> на базе клуба любителей водных
-                <br> видов спорта <img src="images/line.png" class="title-1__line"></div>
+                <br> видов спорта <img src="images/line.png" class="main-title__line"></div>
             <div class="anounce">
                 <div class="anounce__title">Фестиваль водных
                     <br> видов спорта</div>
@@ -54,9 +71,21 @@
                 </div>
             </div>
             <div class="social">
-                <a href="#"><img src="images/ico_twitter.png" class="touch-twitter" alt="twitter"></a>
-                <a href="#"><img src="images/ico_vk.png" class="touch-vk" alt="vk"></a>
-                <a href="#"><img src="images/ico_fb.png" class="touch-fb" alt="fb"></a>
+                <a href="#">
+                    <svg class="touch-twitter">
+                        <use xlink:href="images/dest/src.svg#ico_twitter">
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="touch-vk">
+                        <use xlink:href="images/dest/src.svg#ico_vk">
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="touch-fb">
+                        <use xlink:href="images/dest/src.svg#ico_fb">
+                    </svg>
+                </a>
             </div>
         </div>
         <!-- /HEADER -->
@@ -72,16 +101,15 @@
                 <div class="action"><img src="images/action/2.jpg" class="main-picture" alt=""><span class="head head1">Jet Ski</span><span class="numb">05</span></div>
                 <div class="action"><img src="images/action/3.jpg" class="main-picture" alt=""><span class="head">Кайтсерфинг</span><span class="numb">06</span></div>
             </div>
-            <div class="flex-container">
-                <!-- <div class="row"> -->
-                <div class="flex-container__left">
-                    <div class="flex-container__left__title">Отель и коттеджи</div>
-                    <p class="flex-container__left__description">На берегу Красного озера на базе клуба построенотель и коттеджный поселокс интересной и уникальной спортивно- развлекательной инфраструктурой. Специально для увлекающихся людей мы оставили несколько мест. Предлагаем вам возможность приобрести участок под строительство собственного коттеджа на территории базы.</p>
-                    <div class="flex-container__action">
-                        <button class="flex-container__action__button">Смотреть планы</button>
+            <div class="info">
+                <div class="info-left">
+                    <div class="info-left__title">Отель и коттеджи</div>
+                    <p class="info-left__description">На берегу Красного озера на базе клуба построенотель и коттеджный поселокс интересной и уникальной спортивно- развлекательной инфраструктурой. Специально для увлекающихся людей мы оставили несколько мест. Предлагаем вам возможность приобрести участок под строительство собственного коттеджа на территории базы.</p>
+                    <div class="info-action">
+                        <button class="info-action__button">Смотреть планы</button>
                     </div>
                 </div>
-                <div class="info-slider flex-container__right">
+                <div class="info-slider info-right js-info-slider">
                     <div class=""><img src="images/info-block/1.jpg" class="main-picture-slider" alt=""></div>
                     <div class=""><img src="images/info-block/2.jpg" class="main-picture-slider" alt=""></div>
                     <div class=""><img src="images/info-block/3.jpg" class="main-picture-slider" alt=""></div>
@@ -100,7 +128,7 @@
             </div>
             <div class="club">
                 <h1 class="club__title">Клуб Акватории</h1>
-                <div class="club-slider">
+                <div class="club-slider js-club-slider">
                     <div class="club-slider__item"><img class="club-slider__item_round" src="images/slider-club/3.jpg" alt="">Михаил Седаков</div>
                     <div class="club-slider__item"><img class="club-slider__item_round" src="images/slider-club/4.jpg" alt="">Наталья Друппова</div>
                     <div class="club-slider__item"><img class="club-slider__item_round" src="images/slider-club/5.jpg" alt="">Кристина Риччи</div>
@@ -137,13 +165,25 @@
                     <a href="#" class="footer-link__item">Написать нам</a>
                 </div>
                 <div class="footer-social">
-                    <a href="#" class="footer-social__item twitter"><img src="images/ico_twitter-footer.png" alt="twitter"></a>
-                    <a href="#" class="footer-social__item vk"><img src="images/ico_vk-footer.png" alt="vk"></a>
-                    <a href="#" class="footer-social__item fb"><img src="images/ico_fb-footer.png" alt="fb"></a>
+                    <a href="#" class="footer-social__item twitter">
+                        <svg class="twitter-footer">
+                            <use xlink:href="images/dest/src.svg#ico_twitter-footer">
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social__item vk">
+                        <svg class="vk-footer">
+                            <use xlink:href="images/dest/src.svg#ico_vk-footer">
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social__item fb">
+                        <svg class="fb-footer">
+                            <use xlink:href="images/dest/src.svg#ico_fb-footer">
+                        </svg>
+                    </a>
                 </div>
                 <a href="#" class="footer-link__author">Дизайн и разработка - <strong>Оджетто</strong></a>
             </div>
-            <div class="partners-slider">
+            <div class="partners-slider js-partners-slider">
                 <div class="partners-slider__item"><img src="images/partners/1.png"></div>
                 <div class="partners-slider__item"><img src="images/partners/2.png"></div>
                 <div class="partners-slider__item"><img src="images/partners/3.png"></div>
