@@ -319,7 +319,7 @@ body {
   background-color: white;
   font-size: 1.063em;
   text-transform: uppercase;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 .map {
   position: relative;
@@ -459,8 +459,8 @@ body {
 .footer-social {
   width: 120px;
   position: absolute;
-  left: 780px;
-  top: 222px;
+  left: 791px;
+  top: 218px;
 }
 .footer-social__item {
   text-decoration: none;
@@ -476,7 +476,7 @@ body {
   position: absolute;
 }
 .partners-slider {
-  width: 700px;
+  width: 35%;
   top: 85px;
   right: 93px;
 }
@@ -504,7 +504,7 @@ body {
 }
 .prevs {
   top: 86px;
-  left: 413px;
+  left: 50%;
   position: absolute;
   width: 50px;
   height: 65px;
@@ -596,6 +596,9 @@ body {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     width: 100%;
+  }
+  .prevs {
+    left: 59px;
   }
 }
 @media (max-width: 1300px) {
@@ -713,11 +716,19 @@ body {
   .info-right {
     width: 606px;
   }
+  .footer-social {
+    display: none;
+  }
+  .footer-link {
+    top: 177px;
+    position: absolute;
+    left: 11px;
+  }
+  .footer-link__author {
+    display: none;
+  }
 }
 @media only screen and (max-width: 800px) {
-  body {
-    font-size: 100%;
-  }
   .main-title {
     line-height: 43px;
     font-size: 1.8em;
@@ -726,6 +737,9 @@ body {
     top: 15px;
     left: 55%;
     max-width: 43%;
+  }
+  .partner-slider {
+    right: 67px;
   }
 }
 @media (max-width: 936px) {
@@ -767,12 +781,6 @@ body {
   .footer-info__title {
     display: none;
   }
-  .prevs {
-    left: 13px;
-  }
-  .nexts {
-    right: 27px;
-  }
 }
 @media (max-width: 418px) {
   .map__item {
@@ -781,9 +789,6 @@ body {
   }
   .info-left__description {
     font-size: 0.9em;
-  }
-  .partners-slider {
-    width: 400px;
   }
   .twitter {
     left: 120px;

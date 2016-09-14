@@ -348,7 +348,7 @@ body {
         background-color: white;
         font-size: 1.063em;
         text-transform: uppercase;
-        margin-top: 2%;
+        margin-top: 3%;
     }
 }
 
@@ -482,8 +482,8 @@ body {
 .footer-social {
     width: 120px;
     position: absolute;
-    left: 780px;
-    top: 222px;
+    left: 791px;
+    top: 218px;
     &__item {
         text-decoration: none;
         font-size: 13px;
@@ -501,7 +501,7 @@ body {
 }
 
 .partners-slider {
-    width: 700px;
+    width: 35%;
     top: 85px;
     right: 93px;
     &__item {
@@ -532,7 +532,7 @@ body {
 
 .prevs {
     top: 86px;
-    left: 413px;
+    left: 50%;
     position: absolute;
     width: 50px;
     height: 65px;
@@ -617,6 +617,9 @@ body {
         flex-grow: 0;
         flex-shrink: 0;
         width: 100%;
+    }
+    .prevs {
+        left: 59px;
     }
 }
 
@@ -735,12 +738,20 @@ body {
     .info-right {
         width: 606px;
     }
+    .footer-social {
+        display: none;
+    }
+    .footer-link {
+        top: 177px;
+        position: absolute;
+        left: 11px;
+        &__author {
+            display: none;
+        }
+    }
 }
 
 @media @mobile800 {
-    body {
-        font-size: 100%;
-    }
     .main-title {
         line-height: 43px;
         font-size: 1.8em;
@@ -749,6 +760,9 @@ body {
         top: 15px;
         left: 55%;
         max-width: 43%;
+    }
+    .partner-slider {
+        right: 67px;
     }
 }
 
@@ -797,12 +811,6 @@ body {
             display: none;
         }
     }
-    .prevs {
-        left: 13px;
-    }
-    .nexts {
-        right: 27px;
-    }
 }
 
 @media (max-width: 418px) {
@@ -816,9 +824,6 @@ body {
         &__description {
             font-size: 0.9em;
         }
-    }
-    .partners-slider {
-        width: 400px;
     }
     .twitter {
         left: 120px;

@@ -37,7 +37,7 @@ $(document).ready(function() {
         prevArrow: $('.prevs'),
         nextArrow: $('.nexts'),
         responsive: [{
-            breakpoint: 1024,
+            breakpoint: 1066,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
@@ -45,13 +45,13 @@ $(document).ready(function() {
                 dots: true
             }
         }, {
-            breakpoint: 600,
+            breakpoint: 840,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1
             }
         }, {
-            breakpoint: 480,
+            breakpoint: 670,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
