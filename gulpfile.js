@@ -1,21 +1,19 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
-var autoprefixer = require('gulp-autoprefixer');
-var browserSync = require('browser-sync').create();
-var svgstore = require('gulp-svgstore');
-var inject = require('gulp-inject');
-var svgmin = require('gulp-svgmin');
-var path = require('path');
-browserSync.init({
-    server: "./"
-});
-browserSync.stream();
-gulp.watch("less/*.less", ['styles']);
-gulp.watch("*.html").on('change', browserSync.reload);
+var gulp = require('gulp'),
+    less = require('gulp-less'),
+    autoprefixer = require('gulp-autoprefixer'),
+    browserSync = require('browser-sync'),
+    svgstore = require('gulp-svgstore'),
+    inject = require('gulp-inject'),
+    svgmin = require('gulp-svgmin'),
+    jquery = require('gulp-jquery'),
+    path = require('path');
 
-gulp.task('default', function() {
-    // place code for your default task here
-});
+var config = {
+    server: {
+        baseDir: ["./"]
+    }
+};
+
 
 gulp.task('styles', function() {
     gulp.src('less/**/*.less')
@@ -27,7 +25,7 @@ gulp.task('styles', function() {
         .pipe(browserSync.stream());
 });
 
-var jquery = require('gulp-jquery');
+
 gulp.task('jquery', function() {
     return gulp.src('./node_modules/jquery-custom/jquery.1/src')
         .pipe(jquery({
@@ -44,3 +42,14 @@ gulp.task('svgstore', function() {
         .pipe(svgstore({ fileName: 'icons.svg', prefix: 'ico-' }))
         .pipe(gulp.dest('images/dest'));
 });
+
+gulp.task("watch", function () {
+        gulp.watch("less/*.less", ['styles']);
+        gulp.watch("*.html").on('change', browserSync.reload);
+});
+
+gulp.task("server", function () {
+    browserSync(config);
+});
+
+gulp.task("default", ["styles", "jquery", "svgstore", "watch", "server"]);
