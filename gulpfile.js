@@ -52,4 +52,4 @@ gulp.task("server", function () {
     browserSync(config);
 });
 
-gulp.task("default", ["styles", "jquery", "svgstore", "watch", "server"]);
+gulp.task("default", ["styles", "svgstore", "watch", "server"]);
